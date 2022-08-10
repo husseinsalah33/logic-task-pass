@@ -1,0 +1,31 @@
+python :
+Q 1 / Answer :
+name = 'hussein salah'
+remove_character = name.replace("u","")
+print ('before removeing :',name)
+print ('after removing :',remove_character)
+
+Q 2 / Answer :
+begin_of_range = 1
+end_of_range = 50
+
+print("The Prime Numbers in the range are : ")
+for i in range(begin_of_range, end_of_range , 1):
+    if i > 1:
+        for j in range(2, i):
+            if (i % j) == 0:
+                break
+        else:
+            print(i)
+            
+Q 3 / Answer :
+def string (character):
+    name = "hussein salah"
+    count = 0
+    for i in name :
+        if i == character :
+            count +=1
+    return "count of (s) character is :" , count
+character = 's'
+print(string(character))
+
